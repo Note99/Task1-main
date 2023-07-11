@@ -9,7 +9,7 @@ import ru.itis.models.User;
  * @author Marsel Sidikov (AIT TR)
  */
 public interface UsersRepository extends CrudRepository<User> {
-    User findByEmail(String emailUser);
+
 
     User findByEmail(String emailUser);
 

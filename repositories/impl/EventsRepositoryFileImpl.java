@@ -34,17 +34,7 @@ public class EventsRepositoryFileImpl implements EventsRepository {
         }
     }
 
-    @Override
-    public Event findByName(String nameEvent) {
-        if (nameEvent.equals("Практика по Golang")) {
-            return Event.builder()
-                    .id("c5bcc553-a8f3-4619-8e34-c19abf75aab5")
-                    .name("Практика по Golang")
-                    .date(LocalDate.parse("2023-07-01"))
-                    .build();
-        }
-        return null;
-    }
+
 
     @Override
     public void saveUserToEvent(User user, Event event) {

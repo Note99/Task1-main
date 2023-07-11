@@ -10,7 +10,7 @@ import ru.itis.models.User;
  * @author Marsel Sidikov (AIT TR)
  */
 public interface EventsRepository extends CrudRepository<Event> {
-    Event findByName(String nameEvent);
+
 
     List<Event> findAllByMembersContains(User user);
 
