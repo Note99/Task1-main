@@ -34,15 +34,7 @@ public class AppService {
         usersRepository.save(user);
     }
 
-    public void addEvent(String name, LocalDate date) {
-        Event event = Event.builder()
-                .id(UUID.randomUUID().toString())
-                .name(name)
-                .date(date)
-                .build();
 
-        eventsRepository.save(event);
-    }
 
     public void addUserToEvent(String emailUser, String nameEvent) {
         User user = usersRepository.findByEmail(emailUser);
